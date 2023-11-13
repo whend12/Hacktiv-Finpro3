@@ -1,6 +1,6 @@
  <div align="center">
   <a href="https://www.figma.com/file/62wHY8gvihIDNUFnZVrvKn/Marketing-Landing-Page-Free-Ui-(Community)?type=design&node-id=21%3A19&mode=design&t=Al4pInAbZ3mppTnO-1">
-    <img src="https://github.com/whend12/Hacktiv-Finpro/assets/119909214/6b691c88-4fb2-45d3-95ef-722b39d60935" alt="Profile" width="200">
+    <img src="https://github.com/whend12/Hacktiv8-Finpro3/assets/119909214/0a4871f9-e312-4342-925d-a0c4bca59fb5" alt="Profile" max-width="100">
   </a>
   <h2 style="font-size:30px;" align="center">
     <strong>
