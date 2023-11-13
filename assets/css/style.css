@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&family=Roboto+Slab:wght@900&family=Work+Sans:wght@700&display=swap");
+
+* {
+  background-color: rgba(1, 18, 38, 1);
+  scroll-behavior: smooth;
+}
+
+/* settings navbar */
+a.navbar-brand,
+a.nav-link {
+  color: #ffffff;
+  font-family: "Roboto Slab", serif;
+}
+
+img.logo {
+  padding-right: 5px;
+}
+
+button.Contact-Us {
+  background-color: rgba(100, 242, 60, 1);
+  font-family: "Roboto Slab", serif;
+  color: #000;
+}
+
+a.no:hover {
+  color: #ffffff !important;
+}
+
+a.navbar-brand:hover,
+a.nav-link:hover {
+  color: rgba(50, 100, 150, 1);
+}
+
+button.Contact-Us:hover {
+  background-color: rgba(50, 100, 150, 1);
+}
+
+@media (max-width: 991px) {
+  img.logo {
+    margin-top: 0;
+  }
+}
+/* akhir navbar */
