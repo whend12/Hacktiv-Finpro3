@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Noton</title>
+    <title>Content Ranks</title>
     <!-- font awesome -->
     <script
       src="https://kit.fontawesome.com/35dd348907.js"
@@ -12,7 +12,7 @@
     <!-- icons website -->
     <link
       rel="shortcut icon"
-      href="assets/img/logo/Noton.png"
+      href="assets/img/logo/Duck.png"
       type="image/x-icon"
     />
     <!-- Template Stylesheet -->
@@ -26,7 +26,7 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg home">
+    <nav class="navbar navbar-expand-lg home shadow">
       <div class="container">
         <div class="container-fluid fw-bold">
           <button
@@ -45,21 +45,20 @@
             data-aos="fade-down"
             id="navbarTogglerDemo01"
           >
-            <img
-              src="assets/img/logo/Noton.png"
-              alt="Logo"
-              width="20"
-              height="20"
-              class="d-inline-block align-text-top logo"
-              style="object-fit: cover"
-            />
+            <div class="bg-first position-absolute top-1">
+              <div class="bg-second">
+                <img
+                  src="assets/img/logo/Duck.png"
+                  alt="Logo"
+                  width="20"
+                  height="20"
+                  class="d-inline-block align-text-top logo"
+                  style="object-fit: cover"
+                />
+              </div>
+            </div>
 
-            <a
-              class="navbar-brand"
-              href="https://www.figma.com/file/62wHY8gvihIDNUFnZVrvKn/Marketing-Landing-Page-Free-Ui-(Community)?type=design&node-id=21%3A8&mode=design&t=5SPZNHKcprNO9oVe-1"
-              ><span>Noton.</span></a
-            >
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto mt-2 mt-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0 ms-auto mt-2 mt-lg-0 px-4">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
@@ -74,7 +73,7 @@
               </li>
             </ul>
 
-            <button class="btn Contact-Us" type="button">
+            <button class="Contact-Us" type="button">
               <a
                 class="no text-decoration-none bg-transparent text-black"
                 href="https://wa.me/62895618748150"
@@ -86,6 +85,24 @@
       </div>
     </nav>
     <!-- akhir navbar -->
+
+    <!-- bagian home -->
+    <section class="home">
+      <div class="container mx-auto mt-5">
+        <div class="row justify-content-between">
+          <div class="col-md-4">
+            <h1 class="text-start">We Create Content that ranks</h1>
+            <button type="button" class="explore-more text-uppercase">
+              see our works
+            </button>
+          </div>
+          <div class="col-md-4">
+            <img src="assets/img/home.png" class="img-fluid" alt="Ilustrasi" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir home -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({

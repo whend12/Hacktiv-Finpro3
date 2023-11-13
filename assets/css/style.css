@@ -1,43 +1,43 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&family=Roboto+Slab:wght@900&family=Work+Sans:wght@700&display=swap");
 
-* {
-  background-color: rgba(1, 18, 38, 1);
-  scroll-behavior: smooth;
+.bg-first {
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  padding: 30px;
+  line-height: 50px;
 }
 
-/* navbar */
-a.navbar-brand,
-a.nav-link {
-  color: #ffffff;
-  font-family: "Roboto Slab", serif;
-}
-
-img.logo {
-  padding-right: 5px;
+.bg-second {
+  background-color: rgba(2, 14, 53, 1);
+  width: 100%;
 }
 
 button.Contact-Us {
-  background-color: rgba(100, 242, 60, 1);
-  font-family: "Roboto Slab", serif;
-  color: #000;
+  width: 6.6875rem;
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
+  padding: 10px;
 }
 
-a.no:hover {
-  color: #ffffff !important;
+.explore-more {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
 }
 
-a.navbar-brand:hover,
-a.nav-link:hover {
-  color: rgba(50, 100, 150, 1);
+.explore-more:hover {
+  background-color: #3498db;
+  color: #fff;
+  border-color: #fff;
 }
 
-button.Contact-Us:hover {
-  background-color: rgba(50, 100, 150, 1);
+.img-fluid {
+  width: 90rem;
 }
 
-@media (max-width: 991px) {
-  img.logo {
-    margin-top: 0;
-  }
+h1.text-start {
+  font-size: 97px;
+  font-weight: 400;
 }
-/* akhir navbar */
