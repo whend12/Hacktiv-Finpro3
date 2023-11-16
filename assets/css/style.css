@@ -68,3 +68,195 @@ h1.text-start {
   }
 }
 /* akhir section header & banner */
+
+/* section about */
+.about {
+  margin-top: 140px;
+  margin-bottom: 100px;
+  position: relative;
+}
+.underline-svg {
+  position: absolute;
+  top: -40%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.underline {
+  width: 102px;
+  height: 2px;
+  background-color: #e73587;
+  margin: 8px auto;
+}
+
+.text-about {
+  font-family: "Roboto Slab", serif;
+  font-size: 36px;
+  font-weight: 900;
+  color: #020e35;
+  margin-top: 50px;
+}
+
+.about p {
+  color: #2b2b2b;
+  font-size: 20px;
+  font-weight: 2300;
+  line-height: normal;
+}
+
+.about svg {
+  margin-top: 90px;
+  margin-right: 10px;
+}
+
+.half-oval {
+  position: absolute;
+  width: 276px; /* Sesuaikan lebar setengah oval */
+  height: 276px; /* Sesuaikan tinggi setengah oval */
+  background-color: rgba(240, 243, 250, 1);
+  border-radius: 0 0 50% 50%; /* Membuat sudut bawah setengah oval membulat */
+  left: -158px; /* Menempel di sebelah kiri */
+  top: -40px; /* Menempel di bagian atas */
+  transform: rotate(270deg); /* Memutar bentuk oval */
+}
+
+/* Valuable Service */
+
+.valueable {
+  background: linear-gradient(to bottom, transparent 50%, #020e35 50%);
+  color: white;
+  padding: 50px 0;
+}
+.valueable h2 {
+  color: #020e35;
+}
+.valuable svg {
+  margin-top: 90px;
+  margin-right: 10px;
+}
+.underline2 {
+  width: 102px;
+  height: 3px;
+  background-color: #e73587;
+  margin: 8px auto;
+}
+
+.valuable h2 {
+  color: #ffffff;
+  text-align: center;
+  font-family: Basic;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 40px;
+}
+
+.card-title {
+  color: #2b2b2b;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  border: none;
+}
+
+.card.card1 {
+  background-color: rgba(253, 248, 227, 1);
+  height: 550px;
+}
+
+.card.card2 {
+  background-color: rgba(240, 243, 250, 1);
+}
+
+.card.card3 {
+  background-color: rgba(254, 239, 240, 1);
+}
+
+.card img {
+  width: 90%;
+  height: 255px;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.card p {
+  color: #2b2b2b;
+  text-align: center;
+  font-style: normal;
+  line-height: normal;
+}
+
+.card .card-body {
+  flex-grow: 1;
+}
+
+.btn.btn-gradient {
+  background-image: linear-gradient(
+    to right,
+    rgba(140, 50, 240, 1),
+    rgba(231, 53, 135, 1)
+  );
+  border: none;
+  width: 50%;
+  margin-top: 70px;
+}
+
+.fcard .card:last-child {
+  margin-right: 0;
+}
+
+.carousel-button-next {
+  position: absolute;
+  top: 50%;
+  right: -70px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-image: linear-gradient(
+    to right,
+    rgba(140, 50, 240, 1),
+    rgba(231, 53, 135, 1)
+  );
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.carousel-button-next svg {
+  width: 70%;
+  height: 50%;
+}
+
+.carousel-button-next:hover {
+  background-color: rgba(140, 50, 240, 1);
+  transition: background-color 0.3s ease;
+}
+
+/* Tambahan untuk membuat kartu menjadi satu kolom pada tampilan layar kecil */
+@media (max-width: 567px) {
+  .fcard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .fcard .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .carousel-button-next {
+    display: none;
+  }
+  .half-oval {
+    left: -140px; /* Menempel di sebelah kiri */
+    top: -20px; /* Sesuaikan jarak antara oval dan paragraf */
+    z-index: -1; /* Menempatkan di belakang konten lain */
+  }
+}
