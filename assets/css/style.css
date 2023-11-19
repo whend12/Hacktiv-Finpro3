@@ -261,6 +261,15 @@ h1.text-start {
 }
 
 /* section our work */
+section#portfolio {
+  background-color: rgba(2, 14, 53, 1);
+}
+#portfolio h1,
+#portfolio h2,
+#portfolio h4,
+#portfolio p {
+  color: white;
+}
 .all-work {
   padding: 10px 20px;
   font-size: 16px;
