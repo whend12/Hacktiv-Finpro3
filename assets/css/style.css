@@ -110,17 +110,16 @@ h1.text-start {
 
 .half-oval {
   position: absolute;
-  width: 276px; /* Sesuaikan lebar setengah oval */
-  height: 276px; /* Sesuaikan tinggi setengah oval */
+  width: 276px;
+  height: 276px;
   background-color: rgba(240, 243, 250, 1);
-  border-radius: 0 0 50% 50%; /* Membuat sudut bawah setengah oval membulat */
-  left: -158px; /* Menempel di sebelah kiri */
-  top: -40px; /* Menempel di bagian atas */
-  transform: rotate(270deg); /* Memutar bentuk oval */
+  border-radius: 0 0 50% 50%;
+  left: -158px;
+  top: -40px;
+  transform: rotate(270deg);
 }
 
 /* Valuable Service */
-
 .valueable {
   background: linear-gradient(to bottom, transparent 50%, #020e35 50%);
   color: white;
@@ -255,66 +254,81 @@ h1.text-start {
     display: none;
   }
   .half-oval {
-    left: -140px; /* Menempel di sebelah kiri */
-    top: -20px; /* Sesuaikan jarak antara oval dan paragraf */
-    z-index: -1; /* Menempatkan di belakang konten lain */
+    left: -140px;
+    top: -20px;
+    z-index: -1;
   }
 }
-.portfolio {
-  background-color: #020e35;
+
+/* section our work */
+.all-work {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
 }
-.title {
-  color: white;
+.port-1 {
+  background-color: #f09532;
+  width: 36rem;
+  height: 15rem;
 }
-.col-lg-5 {
-  color: white;
+.img-1 {
+  width: 15rem;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
-.btn {
-  background-image: linear-gradient(
-    to right,
-    rgba(140, 50, 240, 1),
-    rgba(231, 53, 135, 1)
-  );
-  margin-top: 3rem;
+.img-2 {
+  width: 15rem;
+  margin-top: 52px;
+  margin-bottom: 0;
 }
-.img-work {
-  width: 470px;
-  height: 330px;
+.img-3 {
+  width: 20rem;
+  margin-top: 40px;
+  margin-bottom: 0;
 }
-.work-title {
-  text-align: right;
-  margin-bottom: 9rem;
+.img-4 {
+  width: 20rem;
+  margin-top: 45px;
+  margin-bottom: 0;
 }
-.work1-title {
-  text-align: left;
-  padding-left: 0.5rem;
-  margin-bottom: 9rem;
+.port-2 {
+  background-color: #8c32f0;
+  width: 36rem;
+  height: 15rem;
 }
-.card-subtitle {
-  text-align: right;
-  line-height: 20px;
-  font-size: 12px;
-  padding-left: 0.5rem;
-  letter-spacing: 3px;
+.port-3 {
+  background-color: #e73587;
+  width: 36rem;
+  height: 15rem;
 }
-.card-subtitle1 {
-  text-align: left;
-  line-height: 20px;
-  font-size: 12px; 
-  padding-left: 0.5rem;
-  letter-spacing: 3px;
+.port-4 {
+  background-color: #32d6f0;
+  width: 36rem;
+  height: 15rem;
 }
-.card-description {
-  text-align: right;
-  padding-top: 2rem; 
-  padding-left: 0.5rem;
-  font-size: 15px;
-  line-height: 20px;
+@media only screen and (max-width: 391px) {
+  img.img-1 {
+    width: 15rem;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  img.img-2 {
+    width: 15rem;
+    margin-top: 52px;
+    margin-bottom: 0;
+  }
+  img.img-3 {
+    width: 20rem;
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+  img.img-4 {
+    width: 20rem;
+    margin-top: 45px;
+    margin-bottom: 0;
+  }
 }
-.card-description1 {
-  text-align: left;
-  padding-top: 2rem; 
-  padding-left: 0.5rem;
-  font-size: 15px;
-  line-height: 20px;
-}
+/* akhir section our work */
