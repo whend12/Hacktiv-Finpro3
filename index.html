@@ -1,226 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Content Ranks</title>
-    <!-- font awesome -->
-    <script
-      src="https://kit.fontawesome.com/35dd348907.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- icons website -->
-    <link
-      rel="shortcut icon"
-      href="assets/img/logo/Duck.png"
-      type="image/x-icon"
-    />
-    <!-- Template Stylesheet -->
-    <link href="assets/css/style.css" rel="stylesheet" />
-    <!-- Bootstrap Stylesheet -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
-    <!-- AOS Library -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-white home shadow">
-      <div class="container">
-        <div
-          class="bg-first position-absolute"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-back"
-          data-aos-delay="100"
-          data-aos-offset="0"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="45"
-            height="48"
-            viewBox="0 0 45 48"
-            fill="none"
-            class="mt-3"
-          >
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M33.0467 0C29.7684 0 27.12 2.65209 27.12 5.925V20.9875C27.12 27.7103 21.6779 33.1375 14.9652 33.1375C8.24366 33.1375 2.81328 27.6997 2.81328 20.989V20.9875V20.9807C2.80962 20.2072 2.18123 19.5813 1.40664 19.5813C0.6298 19.5813 0 20.2109 0 20.9875C0 32.9109 8.91706 40.4688 18.7333 40.4688C29.9274 40.4688 38.9734 31.4114 38.9734 20.2344V5.925C38.9733 2.64731 36.3197 0 33.0467 0ZM41.7866 6.02503H43.5934C44.3702 6.02503 45 6.65466 45 7.43128C45 8.20791 44.3702 8.83753 43.5934 8.83753H41.7866V6.02503ZM14.9651 30.325C9.81581 30.325 5.62647 26.1369 5.62647 20.9807H5.62656V20.9674C5.62421 20.4818 5.53813 20.0155 5.38368 19.5813H20.9933C22.2135 19.5813 23.3506 19.2214 24.3066 18.6042V20.9875C24.3066 26.1362 20.1161 30.325 14.9651 30.325ZM21.5466 45.1875H26.2667C27.0435 45.1875 27.6733 45.8171 27.6733 46.5938C27.6733 47.3704 27.0435 48 26.2667 48H18.7333C17.9565 48 17.3267 47.3704 17.3267 46.5938C17.3267 45.8171 17.9565 45.1875 18.7333 45.1875V43.2812C19.6812 43.2812 20.6202 43.224 21.5466 43.1123V45.1875Z"
-              fill="white"
-            />
-          </svg>
-          <div class="bg-second"></div>
-        </div>
-        <div class="container-fluid fw-bold" data-aos="fade-down">
-          <button
-            class="navbar-toggler border-white"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarCollapse"
-          >
-            <span class="navbar-toggler-icon bg-white text-end"></span>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Content Ranks</title>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/35dd348907.js" crossorigin="anonymous"></script>
+  <!-- icons website -->
+  <link rel="shortcut icon" href="assets/img/logo/Duck.png" type="image/x-icon" />
+  <!-- Template Stylesheet -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <!-- Bootstrap Stylesheet -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-white home shadow">
+    <div class="container">
+      <div class="bg-first position-absolute" data-aos="fade-zoom-in" data-aos-easing="ease-in-back"
+        data-aos-delay="100" data-aos-offset="0">
+        <svg xmlns="http://www.w3.org/2000/svg" width="45" height="48" viewBox="0 0 45 48" fill="none" class="mt-3">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M33.0467 0C29.7684 0 27.12 2.65209 27.12 5.925V20.9875C27.12 27.7103 21.6779 33.1375 14.9652 33.1375C8.24366 33.1375 2.81328 27.6997 2.81328 20.989V20.9875V20.9807C2.80962 20.2072 2.18123 19.5813 1.40664 19.5813C0.6298 19.5813 0 20.2109 0 20.9875C0 32.9109 8.91706 40.4688 18.7333 40.4688C29.9274 40.4688 38.9734 31.4114 38.9734 20.2344V5.925C38.9733 2.64731 36.3197 0 33.0467 0ZM41.7866 6.02503H43.5934C44.3702 6.02503 45 6.65466 45 7.43128C45 8.20791 44.3702 8.83753 43.5934 8.83753H41.7866V6.02503ZM14.9651 30.325C9.81581 30.325 5.62647 26.1369 5.62647 20.9807H5.62656V20.9674C5.62421 20.4818 5.53813 20.0155 5.38368 19.5813H20.9933C22.2135 19.5813 23.3506 19.2214 24.3066 18.6042V20.9875C24.3066 26.1362 20.1161 30.325 14.9651 30.325ZM21.5466 45.1875H26.2667C27.0435 45.1875 27.6733 45.8171 27.6733 46.5938C27.6733 47.3704 27.0435 48 26.2667 48H18.7333C17.9565 48 17.3267 47.3704 17.3267 46.5938C17.3267 45.8171 17.9565 45.1875 18.7333 45.1875V43.2812C19.6812 43.2812 20.6202 43.224 21.5466 43.1123V45.1875Z"
+            fill="white" />
+        </svg>
+        <div class="bg-second"></div>
+      </div>
+      <div class="container-fluid fw-bold" data-aos="fade-down">
+        <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse">
+          <span class="navbar-toggler-icon bg-white text-end"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav ms-auto">
+            <a href="#home" class="nav-item nav-link">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#services" class="nav-item nav-link">Services</a>
+            <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+          </div>
+          <button class="Contact-Us border-0" type="button">
+            <a class="text-decoration-none text-white fw-bold" href="https://wa.me/62895618748150">Contact Us</a>
           </button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto">
-              <a href="#home" class="nav-item nav-link">Home</a>
-              <a href="#about" class="nav-item nav-link">About</a>
-              <a href="#services" class="nav-item nav-link">Services</a>
-              <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
-            </div>
-            <button class="Contact-Us border-0" type="button">
-              <a
-                class="text-decoration-none text-white fw-bold"
-                href="https://wa.me/62895618748150"
-                >Contact Us</a
-              >
-            </button>
-          </div>
         </div>
       </div>
-    </nav>
-    <!-- akhir navbar -->
+    </div>
+  </nav>
+  <!-- akhir navbar -->
 
-    <!-- bagian banner -->
-    <section class="section home" id="home">
-      <div class="container mx-auto mt-5">
-        <div class="row justify-content-between">
-          <div
-            class="col col-lg-6 mt-5"
-            data-aos="fade-right"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-          >
-            <h1 class="text-start">We Create Content that ranks</h1>
-            <button type="button" class="explore-more text-uppercase border-0">
-              see our works
-            </button>
+  <!-- bagian banner -->
+  <section class="section home" id="home">
+    <div class="container mx-auto mt-5">
+      <div class="row justify-content-between">
+        <div class="col col-lg-6 mt-5" data-aos="fade-right" data-aos-offset="100" data-aos-easing="ease-in-sine">
+          <h1 class="text-start">We Create Content that ranks</h1>
+          <button type="button" class="explore-more text-uppercase border-0">
+            see our works
+          </button>
+        </div>
+        <div class="col w-100" data-aos="fade-left" data-aos-offset="100" data-aos-easing="ease-in-sine">
+          <img src="assets/img/home.png" class="img-fluid" alt="Ilustrasi" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- akhir bagian banner -->
+  <!-- About Us -->
+  <section id="about">
+    <div class="about text-center">
+      <h2 class="text-about" data-aos="fade-right" data-aos-offset="100">
+        About Us
+      </h2>
+      <div class="half-oval"></div>
+      <div class="underline" data-aos="fade-right" data-aos-offset="100"></div>
+
+      <div class="about-content" data-aos="fade-left" data-aos-offset="100">
+        <span>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut <br />
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco <br />
+          laboris nisi ut aliquip ex ea commodo consequat.
+        </span>
+      </div>
+    </div>
+    <!-- About end -->
+    <!-- Our Valuable Services -->
+    <div class="valueable text-center">
+      <h2 data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
+        Our Valuable Services
+      </h2>
+      <div class="underline2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+        data-aos-offset="0"></div>
+      <div class="fcard pt-5 pb-5 d-flex justify-content-center">
+        <div class="card card1 text-center" style="width: 18rem" data-aos="flip-left" data-aos-delay="300">
+          <img src="assets/img/card1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">App Development</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn btn-gradient rounded-0">READ MORE</a>
           </div>
-          <div
-            class="col w-100"
-            data-aos="fade-left"
-            data-aos-offset="100"
-            data-aos-easing="ease-in-sine"
-          >
-            <img src="assets/img/home.png" class="img-fluid" alt="Ilustrasi" />
+        </div>
+        <div class="card card2 text-center" style="width: 18rem" data-aos="flip-left" data-aos-delay="300">
+          <img src="assets/img/card2.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">Web Development</h5>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn btn-gradient rounded-0">READ MORE</a>
+          </div>
+        </div>
+        <div class="card card3 text-center" style="width: 18rem" data-aos="flip-left" data-aos-delay="300">
+          <img src="assets/img/card3.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">UI UX Design</h5>
+
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <a href="#" class="btn btn-gradient rounded-0">READ MORE</a>
+          </div>
+          <div class="carousel-button-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="34" viewBox="0 0 19 34" fill="none">
+              <path d="M2 2L17 17L2 32" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- End About Us -->
+
+  <!-- our works-->
+  <div class="portfolio text-center" id="portfolio">
+    <h2 class="title" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0">
+      Our Works
+    </h2>
+    <div class="underline2" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100"
+      data-aos-offset="0"></div>
+    <section class="work-1" data-aos="fade-up-left">
+      <div class="container-md mt-5">
+        <div class="row justify-content-center align-items-center fs-4">
+          <div class="col-lg-5">
+            <img src="assets/img/work1.png" class="img-work" alt="work-1" />
+          </div>
+          <div class="col-lg-5">
+            <h4 class="work1-title">
+              Brand A
+            </h4>
+            <h6 class="card-subtitle1">iOS | ANDROID | WEB DEVELOPMENT</h6>
+            <p class="card-description1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
+            <div>
+            </div>
     </section>
-    <!-- akhir bagian banner -->
-    <!-- About Us -->
-    <section id="about">
-      <div class="about text-center">
-        <h2 class="text-about" data-aos="fade-right" data-aos-offset="100">
-          About Us
-        </h2>
-        <div class="half-oval"></div>
-        <div
-          class="underline"
-          data-aos="fade-right"
-          data-aos-offset="100"
-        ></div>
-
-        <div class="about-content" data-aos="fade-left" data-aos-offset="100">
-          <span>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut <br />
-            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            exercitation ullamco <br />
-            laboris nisi ut aliquip ex ea commodo consequat.
-          </span>
-        </div>
-      </div>
-      <!-- About end -->
-      <!-- Our Valuable Services -->
-      <div class="valueable text-center">
-        <h2
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-back"
-          data-aos-delay="100"
-          data-aos-offset="0"
-        >
-          Our Valuable Services
-        </h2>
-        <div
-          class="underline2"
-          data-aos="fade-zoom-in"
-          data-aos-easing="ease-in-back"
-          data-aos-delay="100"
-          data-aos-offset="0"
-        ></div>
-        <div class="fcard pt-5 pb-5 d-flex justify-content-center">
-          <div
-            class="card card1 text-center"
-            style="width: 18rem"
-            data-aos="flip-left"
-            data-aos-delay="300"
-          >
-            <img src="assets/img/card1.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">App Development</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <a href="#" class="btn btn-gradient rounded-0">READ MORE</a>
-            </div>
+    <section class="work-2" data-aos="fade-up-right">
+      <div class="container-md mt-5">
+        <div class="row justify-content-center align-items-center fs-4">
+          <div class="col-lg-5">
+            <h4 class="work-title">
+              Brand B
+            </h4>
+            <h6 class="card-subtitle">iOS | ANDROID | WEB DEVELOPMENT</h6>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
           </div>
-          <div
-            class="card card2 text-center"
-            style="width: 18rem"
-            data-aos="flip-left"
-            data-aos-delay="300"
-          >
-            <img src="assets/img/card2.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">Web Development</h5>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <a href="#" class="btn btn-gradient rounded-0">READ MORE</a>
-            </div>
-          </div>
-          <div
-            class="card card3 text-center"
-            style="width: 18rem"
-            data-aos="flip-left"
-            data-aos-delay="300"
-          >
-            <img src="assets/img/card3.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">UI UX Design</h5>
-
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-              </p>
-              <a href="#" class="btn btn-gradient rounded-0">READ MORE</a>
-            </div>
-            <div class="carousel-button-next">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="19"
-                height="34"
-                viewBox="0 0 19 34"
-                fill="none"
-              >
-                <path
-                  d="M2 2L17 17L2 32"
-                  stroke="white"
-                  stroke-width="3"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-            </div>
+          <div class="col-lg-5">
+            <img src="assets/img/work2.png" class="img-work" alt="work-2" />
           </div>
         </div>
-      </div>
+    </section>
+    <section class="work-1" data-aos="fade-up-left">
+      <div class="container-md mt-5">
+        <div class="row justify-content-center align-items-center fs-4">
+          <div class="col-lg-5">
+            <img src="assets/img/work3.png" class="img-work" alt="work-1" />
+          </div>
+          <div class="col-lg-5">
+            <h4 class="work1-title">
+              Brand C
+            </h4>
+            <h6 class="card-subtitle1">iOS | ANDROID | WEB DEVELOPMENT</h6>
+            <p class="card-description1">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
+            <div>
+            </div>
+    </section>
+    <section class="work-2" data-aos="fade-up-right">
+      <div class="container-md mt-5">
+        <div class="row justify-content-center align-items-center fs-4">
+          <div class="col-lg-5">
+            <h4 class="work-title">
+              Brand D
+            </h4>
+            <h6 class="card-subtitle">iOS | ANDROID | WEB DEVELOPMENT</h6>
+            <p class="card-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat.
+            </p>
+          </div>
+          <div class="col-lg-5">
+            <img src="assets/img/work4.png" class="img-work" alt="work-2" />
+          </div>
+        </div>
     </section>
 
-    <!-- End About Us -->
+    <button class="btn">SEE ALL WORK</button>
+    <!-- end of our works -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -235,5 +244,6 @@
     <script src="assets/js/script.js"></script>
     <!-- Animasi AOS -->
     <script src="assets/js/aos.js"></script>
-  </body>
+</body>
+
 </html>
