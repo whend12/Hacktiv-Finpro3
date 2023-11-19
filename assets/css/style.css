@@ -98,7 +98,6 @@ h1.text-start {
 
 .text-about {
   font-family: "Roboto Slab", serif;
-  font-size: 36px;
   font-weight: 900;
   color: #020e35;
   margin-top: 50px;
@@ -128,12 +127,16 @@ h1.text-start {
 }
 
 /* Valuable Service */
+.text-services {
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
+}
 .valueable {
   background: linear-gradient(to bottom, transparent 50%, #020e35 50%);
-  color: white;
+  color: #020e35;
   padding: 50px 0;
 }
-.valueable h2 {
+.text-services h1 {
   color: #020e35;
 }
 .valuable svg {
@@ -147,8 +150,7 @@ h1.text-start {
   margin: 8px auto;
 }
 
-.valuable h2 {
-  color: #ffffff;
+.text-services h1 {
   text-align: center;
   font-family: Basic;
   font-size: 40px;
@@ -208,7 +210,7 @@ h1.text-start {
   );
   border: none;
   width: 50%;
-  margin-top: 70px;
+  margin-top: 60px;
 }
 
 .fcard .card:last-child {
@@ -277,6 +279,10 @@ section#portfolio {
 #portfolio h4,
 #portfolio p {
   color: white;
+}
+.text-works {
+  font-family: "Roboto Slab", serif;
+  font-weight: 900;
 }
 .all-work {
   padding: 10px 20px;
