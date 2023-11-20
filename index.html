@@ -19,7 +19,6 @@
     <link href="assets/css/style.css" rel="stylesheet" />
     <!-- Bootstrap Stylesheet -->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="assets/css/bootstrap.min2.css" rel="stylesheet" />
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <!-- AOS Library -->
@@ -33,7 +32,10 @@
 
   <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg sticky-top bg-white home shadow">
+    <nav
+      class="navbar navbar-expand-lg sticky-top bg-white home shadow"
+      id="navbar"
+    >
       <div class="container">
         <div
           class="bg-first position-absolute"
@@ -66,9 +68,7 @@
             data-bs-toggle="collapse"
             data-bs-target="#navbarCollapse"
           >
-            <span class="navbar-icon"
-              ><img src="assets/img/menu.svg" alt=""
-            /></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
@@ -505,7 +505,7 @@
         </div>
         <div class="footer-content">
           <div class="logo-section">
-            <img src="assets/img/logo/Duck.png" alt="logo" />
+            <img src="assets/img/logo/Duck.png" class="logo-duck" alt="logo" />
             <p>Group 3 Digital Marketing</p>
           </div>
 
@@ -543,6 +543,8 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <!-- Template JS -->
     <script src="assets/js/script.js"></script>
+    <!-- Template JS -->
+    <script src="assets/js/navbarScroll.js"></script>
     <!-- Animasi AOS -->
     <script src="assets/js/aos.js"></script>
   </body>
