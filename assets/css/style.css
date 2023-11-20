@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@500&family=Roboto+Slab:wght@900&family=Work+Sans:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Basic&display=swap");
 
 * {
@@ -6,6 +5,16 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+}
+
+h1,
+h2,
+h4,
+h5,
+label,
+a,
+p {
+  font-family: "Basic", sans-serif;
 }
 
 /* section header & banner */
@@ -35,6 +44,7 @@ button.Contact-Us {
 
 .explore-more {
   position: absolute;
+  font-family: "Basic", sans-serif;
   padding: 10px 20px;
   font-size: 16px;
   font-weight: bold;
@@ -55,6 +65,7 @@ button.Contact-Us {
 h1.text-start {
   font-size: 97px;
   font-weight: 400;
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 391px) {
@@ -97,7 +108,7 @@ h1.text-start {
 }
 
 .text-about {
-  font-family: "Roboto Slab", serif;
+  font-family: "Basic", sans-serif;
   font-weight: 900;
   color: #020e35;
   margin-top: 50px;
@@ -128,7 +139,7 @@ h1.text-start {
 
 /* Valuable Service */
 .text-services {
-  font-family: "Roboto Slab", serif;
+  font-family: "Basic", sans-serif;
   font-weight: 900;
 }
 .valueable {
@@ -152,7 +163,7 @@ h1.text-start {
 
 .text-services h1 {
   text-align: center;
-  font-family: Basic;
+  font-family: "Basic", sans-serif;
   font-size: 40px;
   font-style: normal;
   font-weight: 400;
@@ -281,7 +292,7 @@ section#portfolio {
   color: white;
 }
 .text-works {
-  font-family: "Roboto Slab", serif;
+  font-family: "Basic", sans-serif;
   font-weight: 900;
 }
 .all-work {
@@ -452,12 +463,7 @@ a:hover {
 
 .btn-contact {
   background: linear-gradient(270deg, #8c32f0 0%, #e73587 100%);
-  color: #fff;
   width: 100%;
-}
-
-.btn-contact:hover {
-  color: #020e35;
 }
 
 /* Footer */
