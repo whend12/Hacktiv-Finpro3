@@ -68,6 +68,8 @@ button.Contact-Us:hover {
 h1.text-start {
   font-size: 97px;
   font-weight: 400;
+  margin-bottom: -5px;
+  margin-bottom: 0;
 }
 
 img.home {
