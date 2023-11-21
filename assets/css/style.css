@@ -68,7 +68,23 @@ button.Contact-Us:hover {
 h1.text-start {
   font-size: 97px;
   font-weight: 400;
-  margin-bottom: 50px;
+}
+
+img.home {
+  transform: translateX(0px);
+  animation: float 6s ease-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-60px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
 @media only screen and (max-width: 391px) {
