@@ -307,10 +307,16 @@ img.home {
   .carousel-button-next {
     display: none;
   }
+
   .half-oval {
     left: -140px;
     top: -20px;
     z-index: -1;
+  }
+  .swiper-container .card {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 }
 
